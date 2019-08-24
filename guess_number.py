@@ -4,7 +4,11 @@
 # 猜錯的話要告訴他比答案大/小
 
 import random
-r = random.randint(1, 100)
+start = input('請決定猜數字範圍開始值: ')
+end = input('請決定猜數字範圍結束值: ')
+start = int(start)
+end = int(end)
+r = random.randint(start, end)
 count = 0
 while True:
 	num = input('請猜數字: ')
