@@ -5,9 +5,12 @@
 
 import random
 r = random.randint(1, 100)
+count = 0
 while True:
 	num = input('請猜數字: ')
 	num = int(num)
+	count = count + 1 #count += 1
+	print('這是你猜了', count, '次')
 	if num == r:
 		print('終於猜對了!')
 		break
